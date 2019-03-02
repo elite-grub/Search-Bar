@@ -8,50 +8,63 @@ class Search extends React.Component {
 
   render() {
     return (
-      <FormComponent>
-        <SearchBarWrapper>
-          <SearchBarInputsWrapper>
-            <SearchInputsContainer>
-              <SearchCategory>
-                <SearchFillSuggestions>
-                  <Label>
-                    <SearchCategoryText>Find</SearchCategoryText>
-                    <SearchCategoryFieldHolder>
-                      <SearchPlaceHolderWrap placeholder='tacos, cheap dinners, Maxs' type='text' />
-                      {/* <PlaceHolderText placeholder='tacos, cheap dinners, Maxs' type='text'> */}
-                    </SearchCategoryFieldHolder>
-                  </Label>
-                </SearchFillSuggestions>
-              </SearchCategory>
+      <SearchSuggestContainer>
+        <FormComponent>
+          <SearchBarWrapper>
+            <SearchBarInputsWrapper>
+              <SearchInputsContainer>
+                <SearchCategory>
+                  <SearchFillSuggestions>
+                    <Label>
+                      <SearchCategoryText>Find</SearchCategoryText>
+                      <SearchCategoryFieldHolder>
+                        <SearchPlaceHolderWrap placeholder='tacos, cheap dinners, Maxs' type='text' />
+                        {/* <PlaceHolderText placeholder='tacos, cheap dinners, Maxs' type='text'> */}
+                      </SearchCategoryFieldHolder>
+                    </Label>
+                  </SearchFillSuggestions>
+                </SearchCategory>
 
-              <SearchByLocation>
-                <SearchByLocationWrap>
-                  <LocationLabel>
-                    <LocationSearchText>Near</LocationSearchText>
-                    <LocationCategoryFieldHolder>
-                      <LocationPlaceHolderWrap placeholder='address, neighborhood, city, state or zip' />
-                    </LocationCategoryFieldHolder>
-                  </LocationLabel>
-                </SearchByLocationWrap>
-              </SearchByLocation>
-            </SearchInputsContainer>
-          </SearchBarInputsWrapper>
-          <SearchButtonWrapper>
-            <SearchButtonOutterBox>
-              <SearchButtonInlineBlock></SearchButtonInlineBlock>
-              <SearchButtonAction>
-                <SearchButton ><i class='fas fa-search'></i></SearchButton>
-              </SearchButtonAction>
-            </SearchButtonOutterBox>
-          </SearchButtonWrapper>
-        </SearchBarWrapper >
-      </FormComponent >
+                <SearchByLocation>
+                  <SearchByLocationWrap>
+                    <LocationLabel>
+                      <LocationSearchText>Near</LocationSearchText>
+                      <LocationCategoryFieldHolder>
+                        <LocationPlaceHolderWrap placeholder='address, neighborhood, city, state or zip' />
+                      </LocationCategoryFieldHolder>
+                    </LocationLabel>
+                  </SearchByLocationWrap>
+                </SearchByLocation>
+              </SearchInputsContainer>
+            </SearchBarInputsWrapper>
+            <SearchButtonWrapper>
+              <SearchButtonOutterBox>
+                <SearchButtonInlineBlock></SearchButtonInlineBlock>
+                <SearchButtonAction>
+                  <SearchButton ><i class='fas fa-search'></i></SearchButton>
+                </SearchButtonAction>
+              </SearchButtonOutterBox>
+            </SearchButtonWrapper>
+          </SearchBarWrapper >
+        </FormComponent >
+      </SearchSuggestContainer>
     );
   }
 }
 
 
 export default Search
+
+const SearchSuggestContainer = styled.div`
+  width: 706px;
+  // position: absolute;
+  // z-index; 9;
+  // top: 0;
+  // left: 0;
+  // margin-top: 2px;
+//   width: 100%;
+//   border-color: e6e6e6;
+`;
 
 const FormComponent = styled.div`
           margin-bottom: 0px ! important;
