@@ -58,9 +58,10 @@ const TopRedContainer = styled.div`
   background: none;
 `;
 const HeaderContainer = styled.div`
-  max-width: 960px;
+  max-width: 990px;
   margin: 0 auto;
   padding: 0 15px;
+  position: relative;
 `;
 
 const HeaderItemsContainer = styled.div`

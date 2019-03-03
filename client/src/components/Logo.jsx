@@ -6,11 +6,11 @@ const Logo = props => (
     <LogoCompiled>
       <Circle><i class='far fa-circle'></i></Circle>
       <Utensils><i class='fas fa-utensils'></i></Utensils>
-      <EliteText>
-        <Elite>Elite</Elite>
-        <Grub>Grub</Grub>
-      </EliteText>
     </LogoCompiled>
+    <EliteText>
+      <Elite>Elite</Elite>
+      <Grub>Grub</Grub>
+    </EliteText>
   </LogoContainer>
 
 );
@@ -18,7 +18,7 @@ const Logo = props => (
 export default Logo;
 
 const LogoContainer = styled.div`
-  margin-left: 9px;
+  margin-left: 24px;
   margin-right: 9px;
   border-collapse: collapse;
   border-spacing: 0 0;
@@ -36,8 +36,8 @@ const EliteText = styled.div`
   font-weight: 500;
   color: white;
   position: absolute;
-  left: 118px;
-  top: 14px;
+  left: 0px;
+  top: 2px;
   background-color: #d32323;
   font-variant-caps: titling-caps;
   font-size: 15px;

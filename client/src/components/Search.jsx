@@ -306,7 +306,7 @@ const SearchButton = styled.button`
   font-weight: bold;
   text-align: center;
   user-select: none;
-  font-size: 14px;
+  font-size: 16.5px;
   overflow: visible;
   align-items: flex-start;
   -webkit-appearance: button;
