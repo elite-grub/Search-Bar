@@ -69,9 +69,9 @@ const HeaderItemsContainer = styled.div`
   margin-right: -18px;
   border-collapse: separate;
   border-spacing: 18px 0;
-  display: table;
-  min-width: 100%;
-  table-layout: auto;
+  // display: table;
+  // min-width: 100%;
+  // table-layout: auto;
 `;
 
 const LogoContainer = styled.div`
