@@ -91,7 +91,7 @@ const SearchInputsContainer = styled.div`
         `;
 
 const SearchCategory = styled.div`
-          position: relative;
+          // position: relative;
           flex: 1;
           min-width: 0;
           min-height: 0;
@@ -163,6 +163,7 @@ const SearchPlaceHolderWrap = styled.input`
         `;
 
 const SearchByLocation = styled.div`
+          border-left: 1px solid #e6e6e6;
           -webkit-box-flex: 1;
           flex: 1;
           min-width: 0;
@@ -244,6 +245,8 @@ const SearchButtonWrapper = styled.div`
 `;
 
 const SearchButtonOutterBox = styled.div`
+  // border-top-right-radius: 4px;
+  // border-bottom-right-radius: 4px;
   margin-top: -6px;
   margin-left: -3px;
   margin-right: -3px;
@@ -251,7 +254,7 @@ const SearchButtonOutterBox = styled.div`
   font-size: 0;
   line-height: 1;
   text-align: left;
-  border-collapse: seperate;
+  border-collapse: separate;
   border-spacing: 6px 0;
   min-width: 100%
   table-layout: auto;
@@ -276,6 +279,8 @@ const SearchButtonInlineBlock = styled.div`
 `;
 
 const SearchButtonAction = styled.div`
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   margin-top: 6px;
   margin-left: auto;
   margin-right: auto;
@@ -296,8 +301,9 @@ const SearchButtonAction = styled.div`
 const SearchButton = styled.button`
   box-shadow: none;
   border: 0;
-  border-radius: 0 4px 4px 0;
-  background: white;
+  border-radius: 4px 0 0 4px;
+  background: none;
+  color: white;
   line-height: 36px;
   padding: 0 15px;
   width: 54px;

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Logo = props => (
-  <LogoImage>Elite <i class="material-icons">whatshot</i></LogoImage>
+  <LogoImage>Elite<i class="material-icons">whatshot</i></LogoImage>
 
 );
 

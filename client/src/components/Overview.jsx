@@ -50,7 +50,7 @@ const TopHeaderWrapper = styled.div`
   background: #d32323;
   padding: 12px 0;
   position: relative;
-  z-index: 6;
+  // z-index: 6;
   border-color: #e6e6e6;
 `;
 
