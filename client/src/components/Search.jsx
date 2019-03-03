@@ -19,12 +19,10 @@ class Search extends React.Component {
                       <SearchCategoryText>Find</SearchCategoryText>
                       <SearchCategoryFieldHolder>
                         <SearchPlaceHolderWrap placeholder='tacos, cheap dinners, Maxs' type='text' />
-                        {/* <PlaceHolderText placeholder='tacos, cheap dinners, Maxs' type='text'> */}
                       </SearchCategoryFieldHolder>
                     </Label>
                   </SearchFillSuggestions>
                 </SearchCategory>
-
                 <SearchByLocation>
                   <SearchByLocationWrap>
                     <LocationLabel>
@@ -57,185 +55,176 @@ export default Search
 
 const SearchSuggestContainer = styled.div`
   width: 706px;
-  // position: absolute;
-  // z-index; 9;
-  // top: 0;
-  // left: 0;
-  // margin-top: 2px;
-//   width: 100%;
-//   border-color: e6e6e6;
 `;
 
 const FormComponent = styled.div`
-          margin-bottom: 0px ! important;
-          display: block;
-        `;
+  margin-bottom: 0px ! important;
+  display: block;
+`;
 
 const SearchBarWrapper = styled.div`
-          display: table;
-          min-width: 100%
-          table-layout:auto;
-        `;
+  display: table;
+  min-width: 100%
+  table-layout:auto;
+`;
 
 const SearchBarInputsWrapper = styled.div`
-          width: 100%;
-          box-sizing: border-box;
-          display: table-cell;
-          vertical-align: top;
-        `;
+  width: 100%;
+  box-sizing: border-box;
+  display: table-cell;
+  vertical-align: top;
+`;
 
 const SearchInputsContainer = styled.div`
-          display: flex;
-          min-width: 100%;
-          table-layout: auto;
-        `;
+  display: flex;
+  min-width: 100%;
+  table-layout: auto;
+`;
 
 const SearchCategory = styled.div`
-          // position: relative;
-          flex: 1;
-          min-width: 0;
-          min-height: 0;
-          display: block;
-          width: 50%;
-          box-sizing: border-box;
-          vertical-align: top;
-        `;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  display: block;
+  width: 50%;
+  box-sizing: border-box;
+  vertical-align: top;
+`;
 
 const SearchFillSuggestions = styled.div`
-          font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-          position: relative;
-          display: block;
-        `;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  position: relative;
+  display: block;
+`;
 
 const Label = styled.label`
-          border-radius: 4px 0 0 4px;
-          position: relative;
-          box-shadow: none;
-          padding:8px 12px;
-          border: none;
-          background: #fff;
-          margin: 0;
-          height: 36px;
-          line-height: 20px;
-          cursor: text;
-          overflow: hidden;
-          display: block;
-          box-sizing: border-box;
-          width: 100%
-          font-size: 14px;
-          font-weight: bold;
-        `;
+  border-radius: 4px 0 0 4px;
+  position: relative;
+  box-shadow: none;
+  padding:8px 12px;
+  border: none;
+  background: #fff;
+  margin: 0;
+  height: 36px;
+  line-height: 20px;
+  cursor: text;
+  overflow: hidden;
+  display: block;
+  box-sizing: border-box;
+  width: 100%
+  font-size: 14px;
+  font-weight: bold;
+`;
 
 const SearchCategoryText = styled.span`
-          float: left;
-          margin-right: 5px;
-          font-weight: bold;
-          color: #333;
-          cursor: default;
-          user-select: none;
-        `;
+  float: left;
+  margin-right: 5px;
+  font-weight: bold;
+  color: #333;
+  cursor: default;
+  user-select: none;
+`;
 
 const SearchCategoryFieldHolder = styled.span`
-          display: block;
-          overflow: hidden;
+  display: block;
+  overflow: hidden;
 
-        `;
+`;
 
 const SearchPlaceHolderWrap = styled.input`
-        margin: 0;
-        border: 0;
-        outline: 0;
-        box-shadow: none;
-        background: none;
-        display: inline-block;
-        width: 100%;
-        vertical-align: baseline !important;
-        padding: 0 !important;
-        cursor: text;
-        letter-spacing: normal;
-        word-spacing: normal;
-        text-transform: none;
-        text-indent: 0px;
-        text-shadow: none;
-        text-align: start;
-        -webkit-writing-mode: horizontal-tb !important;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+  background: none;
+  display: inline-block;
+  width: 100%;
+  vertical-align: baseline !important;
+  padding: 0 !important;
+  cursor: text;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+  -webkit-writing-mode: horizontal-tb !important;
 
-        `;
+`;
 
 const SearchByLocation = styled.div`
-          border-left: 1px solid #e6e6e6;
-          -webkit-box-flex: 1;
-          flex: 1;
-          min-width: 0;
-          min-height: 0;
-          display: block
-          width: 50%;
-          box-sizing: border-box;
-          vertical-align: top;
-        `;
+  border-left: 1px solid #e6e6e6;
+  -webkit-box-flex: 1;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  display: block
+  width: 50%;
+  box-sizing: border-box;
+  vertical-align: top;
+`;
 
 const SearchByLocationWrap = styled.div`
-          font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-          position: relative;
-          display: block;
-        `;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  position: relative;
+  display: block;
+`;
 
 const LocationLabel = styled.label`
-          // font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-          box-shadow: none;
-          padding: 8px 12px;
-          border: none;
-          border-radius: 0;
-          background: #fff;
-          margin: 0;
-          height: 36px;
-          line-height: 20px;
-          cursor: text;
-          position: relative;
-          overflow: hidden;
-          display: block;
-          box-sizing: border-box;
-          width: 100%;
-          font-size: 14px;
-          font-weight: bold;
-          vertical-align: baseline;
-        `;
+  box-shadow: none;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 0;
+  background: #fff;
+  margin: 0;
+  height: 36px;
+  line-height: 20px;
+  cursor: text;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  vertical-align: baseline;
+`;
 
 const LocationSearchText = styled.span`
-          float: left;
-          margin-right: 5px;
-          font-weight: bold;
-          color: #333;
-          cursor: default;
-          user-select: none;
+  float: left;
+  margin-right: 5px;
+  font-weight: bold;
+  color: #333;
+  cursor: default;
+  user-select: none;
 
-        `;
+`;
 
 const LocationCategoryFieldHolder = styled.span`
-          display: block;
-          overflow: hidden;
-        `;
+  display: block;
+  overflow: hidden;
+`;
 
 
 const LocationPlaceHolderWrap = styled.input`
-          margin: 0;
-          border: 0;
-          outline: 0;
-          box-shadow: none;
-          background: none;
-          display: inline-block;
-          width: 100%;
-          vertical-align: baseline !important;
-          padding: 0 !important;
-          cursor: text;
-          letter-spacing: normal;
-          word-spacing: normal;
-          text-transform: none;
-          text-indent: 0px;
-          text-shadow: none;
-          text-align: start;
-          -webkit-writing-mode: horizontal-tb !important;
-        `;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+  background: none;
+  display: inline-block;
+  width: 100%;
+  vertical-align: baseline !important;
+  padding: 0 !important;
+  cursor: text;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+  -webkit-writing-mode: horizontal-tb !important;
+`;
 
 
 const SearchButtonWrapper = styled.div`

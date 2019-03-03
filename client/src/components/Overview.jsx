@@ -50,7 +50,6 @@ const TopHeaderWrapper = styled.div`
   background: #d32323;
   padding: 12px 0;
   position: relative;
-  // z-index: 6;
   border-color: #e6e6e6;
 `;
 
@@ -69,9 +68,6 @@ const HeaderItemsContainer = styled.div`
   margin-right: -18px;
   border-collapse: separate;
   border-spacing: 18px 0;
-  // display: table;
-  // min-width: 100%;
-  // table-layout: auto;
 `;
 
 const LogoContainer = styled.div`

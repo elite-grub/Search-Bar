@@ -2,25 +2,24 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Logo = props => (
-  
-    <LogoContainer>
-      <LogoCompiled>
-         <Circle><i class = 'far fa-circle'></i></Circle>
-          <Utensils><i class='fas fa-utensils'></i></Utensils>
-          <EliteText>
-            <Elite>Elite</Elite>
-            <Grub>Grub</Grub>
-          </EliteText>
-      </LogoCompiled>  
-    </LogoContainer>
-    
+  <LogoContainer>
+    <LogoCompiled>
+      <Circle><i class='far fa-circle'></i></Circle>
+      <Utensils><i class='fas fa-utensils'></i></Utensils>
+      <EliteText>
+        <Elite>Elite</Elite>
+        <Grub>Grub</Grub>
+      </EliteText>
+    </LogoCompiled>
+  </LogoContainer>
+
 );
 
 export default Logo;
 
 const LogoContainer = styled.div`
   margin-left: 9px;
-  margine-right: 9px;
+  margin-right: 9px;
   border-collapse: collapse;
   border-spacing: 0 0;
 `;
@@ -45,11 +44,11 @@ const EliteText = styled.div`
   text-shadow: 3px 4px 3px #0000002e;
  `;
 
- const Elite = styled.div`
+const Elite = styled.div`
    font-family: inherit;
  `;
 
- const Grub = styled.div`
+const Grub = styled.div`
  font-family: inherit;
 `;
 
