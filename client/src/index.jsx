@@ -1,3 +1,3 @@
-import SearchBar from '.components/App.jsx'
+import SearchBar from './components/App.jsx'
 
 window.SearchBar = SearchBar;
