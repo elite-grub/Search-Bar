@@ -18,7 +18,7 @@ class Search extends React.Component {
                     <Label>
                       <SearchCategoryText>Find</SearchCategoryText>
                       <SearchCategoryFieldHolder>
-                        <SearchPlaceHolderWrap placeholder='tacos, cheap dinners, Maxs' type='text' />
+                        <SearchPlaceHolderWrap placeholder="tacos, cheap dinners, Max's" type="text" />
                       </SearchCategoryFieldHolder>
                     </Label>
                   </SearchFillSuggestions>
