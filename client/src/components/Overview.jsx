@@ -1,4 +1,9 @@
 import React from 'react';
+import styled from 'styled-components';
+
+import Logo from './Logo';
+import Search from './Search';
+import LogAndSign from './LogInSignIn';
 
 class Overview extends React.Component {
   constructor(props) {
@@ -7,16 +12,33 @@ class Overview extends React.Component {
 
   render() {
     return (
-      <h1>Elite</h1>
+      <TopHeader>
+        <TopHeaderWrapper>
+          <TopRedContainer>
+            <HeaderContainer>
+              <HeaderItemsContainer>
+                <LogoContainer>
+                  <Logo />
+                </LogoContainer>
+                <SearchContainer>
+                  <Search />
+                </SearchContainer>
+                <LogSignUpContainer>
+                  <LogAndSign />
+                </LogSignUpContainer>
+              </HeaderItemsContainer>
+            </HeaderContainer>
+
+          </TopRedContainer>
+        </TopHeaderWrapper>
+
+      </TopHeader>
     );
   }
 }
 
 
 
-<<<<<<< HEAD
-export default Overview
-=======
 export default Overview
 
 const TopHeader = styled.div`
@@ -79,4 +101,3 @@ const LogSignUpContainer = styled.div`
   box-sizing: border-box;
   display: table-cell;
 `;
->>>>>>> a33538602c382950692c41f25a0795c9ad0404f8
