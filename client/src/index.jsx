@@ -1,7 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/App.jsx';
+import SearchBar from './components/App.jsx'
 
-// const title = "Search Bar";
-
-ReactDOM.render(<App />, document.getElementById('app'))
+window.SearchBar = SearchBar;
