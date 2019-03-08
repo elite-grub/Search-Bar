@@ -4,6 +4,15 @@ import styled from 'styled-components';
 class LogAndSign extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      showModal: false
+    };
+
+
+  }
+
+  handleToggleModal() {
+    this.setState({ showModal: !this.state.showModal });
   }
 
   render() {
