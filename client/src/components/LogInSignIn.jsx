@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import SignupModal from './SignupModal.jsx';
 
 class LogAndSign extends React.Component {
   constructor(props) {
@@ -8,11 +9,15 @@ class LogAndSign extends React.Component {
       showModal: false
     };
 
-
+    // this.handleToggleModal = this.handleToggleModal.bind(this)
   }
 
-  handleToggleModal() {
-    this.setState({ showModal: !this.state.showModal });
+  openModal() {
+    this.setState({ showModal: true })
+  }
+
+  closeModal() {
+    this.setState({ showModal: false })
   }
 
   render() {
@@ -27,6 +32,7 @@ class LogAndSign extends React.Component {
             </LogInContainer>
             <SignUpContainer>
               <SignUpLink>
+                <SignupModal />
                 <SignUpButtonText>Sign Up</SignUpButtonText>
               </SignUpLink>
             </SignUpContainer>
@@ -98,7 +104,7 @@ const LogInButtonText = styled.span`
   line-height: inherit;
 `;
 
-const SignUpContainer = styled.span`
+const SignUpContainer = styled.button`
   margin-left: 3px;
   display: inline-block;
   border-color: e6e6e6;
