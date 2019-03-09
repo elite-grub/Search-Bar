@@ -4,8 +4,8 @@ import styled from 'styled-components'
 const Logo = props => (
   <LogoContainer>
     <LogoCompiled>
-      <Circle><i class='far fa-circle'></i></Circle>
-      <Utensils><i class='fas fa-utensils'></i></Utensils>
+      <Circle><i className='far fa-circle'></i></Circle>
+      <Utensils><i className='fas fa-utensils'></i></Utensils>
     </LogoCompiled>
     <EliteText>
       <Elite>Elite</Elite>

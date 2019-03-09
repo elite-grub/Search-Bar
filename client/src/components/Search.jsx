@@ -39,7 +39,7 @@ class Search extends React.Component {
               <SearchButtonOutterBox>
                 <SearchButtonInlineBlock></SearchButtonInlineBlock>
                 <SearchButtonAction>
-                  <SearchButton ><i class='fas fa-search'></i></SearchButton>
+                  <SearchButton ><i className='fas fa-search'></i></SearchButton>
                 </SearchButtonAction>
               </SearchButtonOutterBox>
             </SearchButtonWrapper>
